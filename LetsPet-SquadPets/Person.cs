@@ -16,6 +16,6 @@ namespace LetsPet_SquadPets
         public string CEP { get; set; }
         public int HouseNumber { get; set; } 
         public string StreetName { get; set; }
-        public string AdditionalAddressasavas { get; set; }
+        public string AdditionalAddress { get; set; }
     }
 }
