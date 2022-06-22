@@ -59,7 +59,20 @@ namespace LetsPet_SquadPets
             } while (true);
             return vaccineValidity;
         }
-       
+
+
+        public VaccineSystemRegister Teste()
+        {
+            var vacina = new VaccineRegister();
+            string name = vacina.GetVaccineName();
+            Species species = vacina.GetSpeciesVaccine();
+            int validity = vacina.GetVaccineValidity();
+
+            VaccineSystemRegister _vacina = new(name, species, validity);
+            return _vacina;
+        }
+
+
     }
     
 }
