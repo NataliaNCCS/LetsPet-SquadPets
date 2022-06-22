@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LetsPet_SquadPets
 {
-    public enum Species
+    public enum Gender
     {
-        Cachorro = 1,
-        Gato = 2,
+        Fêmea = 1,
+        Macho
     }
 }

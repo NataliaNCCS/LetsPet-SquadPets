@@ -15,7 +15,7 @@ namespace LetsPet_SquadPets
         public Size BreedSize { get; set; }
         public decimal Weight { get; set; }
         public DateTime BirthDate { get; set; }
-        public char Gender { get; set; }
+        public Gender Gender { get; set; }
         public int Age { get { return AgeCalculator(); } }
         public bool CastratedBool { get; set; }  
         public bool DiseasesBool { get; set; }
