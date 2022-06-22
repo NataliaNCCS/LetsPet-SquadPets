@@ -47,7 +47,7 @@ namespace LetsPet_SquadPets
             int vaccineValidity;
             do
             {
-                Console.WriteLine("Qual o peso do animal");
+                Console.WriteLine("Qual a validade em meses da vacina? ");
                 if (int.TryParse(Console.ReadLine(), out vaccineValidity))
                 {
                     if (vaccineValidity > 0)
