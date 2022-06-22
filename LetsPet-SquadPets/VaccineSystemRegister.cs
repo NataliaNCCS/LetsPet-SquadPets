@@ -14,6 +14,13 @@ namespace LetsPet_SquadPets
 
         public List<VaccineRegister> ListVaccine { get; set; }
 
+        public VaccineSystemRegister(string vaccineName, Species speciesVaccine, int vaccineValidity)
+        {
+            VaccineName = vaccineName;
+            SpeciesVaccine = speciesVaccine;
+            VaccineValidity = vaccineValidity;
+        }
+
         public void AddVaccineRegister(VaccineRegister vaccine)
         {
             ListVaccine.Add(vaccine);
