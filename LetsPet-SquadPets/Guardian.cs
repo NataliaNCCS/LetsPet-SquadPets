@@ -8,23 +8,24 @@ namespace LetsPet_SquadPets
 {
     public class Guardian : Person
     {
+
         public DateTime RegistrationDate { get; set; }
         public List<Animal> PetList { get; set; }
 
+        public Guardian(DateTime registrationDate, List<Animal> petList)
+        {
+            RegistrationDate = registrationDate;
+            PetList = petList;
+        }
 
+        
         // MÉTODOS
         public void PrintGuardian()
         {
             Console.WriteLine("IMPRIMINDO TUTOR:");
             Console.WriteLine($"Nome: {Name}");
-            Console.WriteLine($"CPF: {CPF}");
-            Console.WriteLine($"WhatsApp: {WhatsApp}");
-            Console.WriteLine($"Telefone Fixo: {PhoneNumber}");
-            Console.WriteLine($"Email: {Email}");
-            Console.WriteLine($"CEP: {CEP}");
-            Console.WriteLine($"Endereço: {StreetName}, {HouseNumber}");
-            Console.WriteLine($"Complemento: {AdditionalAddress}");
-            Console.WriteLine("\nPETS DO TUTOR:");
+            Console.WriteLine($"CPF: {Cpf}");
+            PersonContact.PrintContact();
             PrintPetList();
         }
 

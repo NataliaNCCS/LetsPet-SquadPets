@@ -8,14 +8,11 @@ namespace LetsPet_SquadPets
 {
     public class Person
     {
-        public string Name { get; set; }    
-        public string CPF { get; set; }
-        public string WhatsApp { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
-        public string CEP { get; set; }
-        public int HouseNumber { get; set; } 
-        public string StreetName { get; set; }
-        public string AdditionalAddress { get; set; }
+        public string Cpf { get; set; }
+        public string Name { get; set; }
+        public DateTime BirthDate { get; set; }
+        public Contact PersonContact { get; set; }
+        public DateTime RegisterDate { get; set; }
+        
     }
 }
